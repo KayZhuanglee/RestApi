@@ -4,7 +4,7 @@ const express = require('express')
 const app = express() 
 
 app.get('/', (req, res) => {
-  res.send('Masi dalam tahap pengembangan!')
+  res.send('still in development stage!')
   console.log(`User acces: ${req.url}
   User Ip: ${req.ip}`)
 })
