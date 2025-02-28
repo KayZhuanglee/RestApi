@@ -39,9 +39,12 @@ thumb,
 url
 })
 })
-  res.send(result)
+  res.json(result)
 } catch(err) {
-  res.send('Error request failed!')
+  res.status(500).json({
+    status: 500,
+    message: 'Failed request!'    
+  })
 }
   console.log(`User acces: ${req.url}
   User Ip: ${req.ip}`)
