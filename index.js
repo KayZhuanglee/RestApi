@@ -91,6 +91,9 @@ category
     status: 500,
     message: 'Error failed request!',
     error: err.message
-})}})  
+})}
+  console.log(`User acces: ${req.url}
+  User Ip: ${req.ip}`)
+})  
 
 module.exports = app;
